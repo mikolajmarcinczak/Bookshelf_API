@@ -12,10 +12,12 @@ namespace Bookshelf_API.Models
         private string _imagePath;
         private DateTime _releaseDate;
 
+        [Key]
         [Required]
         public int Id 
         { 
             get { return _id; } 
+            set { _id = value; }
         }
         [Required]
         public string Author
