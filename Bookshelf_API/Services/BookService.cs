@@ -119,7 +119,7 @@ namespace Bookshelf_API.Services
             dbBook.Tags = book.Tags;
             dbBook.Title = book.Title;
             context.SaveChanges();
-            return new ResponseDTO { Code = 200, Message = "Book updated in the database."}
+            return new ResponseDTO { Code = 200, Message = "Book updated in the database." };
         }
 
         #endregion
